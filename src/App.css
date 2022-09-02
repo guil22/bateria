@@ -1,38 +1,61 @@
-.App {
+h2{
   text-align: center;
+  margin-top: 5vh;
+  color: darkblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.drum-pads {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+  
+  padding: 10px;
+  
+  width: 65%;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 90%;
+  margin-top: 10vh ;
 }
 
-.App-link {
-  color: #61dafb;
+.drum-pad{
+  border: 1px solid darkblue;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#drum-machine{
+  border: 5px solid rgb(14, 12, 143);
+  background-color: lightblue;
+  height: 500px;
+  min-width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#display{
+  
+  background-color: azure;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 120px;
+  height: 60px;
+  margin-right: 20px ;
+
 }
